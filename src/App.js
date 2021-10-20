@@ -9,9 +9,9 @@ function App() {
         <div>
             <h2 className="github__header">github</h2>
             <div className="github__urls">
-                <h4><a href="https://github.com/grykom/wolnowarze_frontend">frontend</a></h4>
-                <h4><a href="https://github.com/grykom/wolnowarze_backend">backend</a></h4>
-                <h4>api-docs</h4>
+                <h4><a target="_blank" href="https://github.com/grykom/wolnowarze_frontend">frontend</a></h4>
+                <h4><a target="_blank" href="https://github.com/grykom/wolnowarze_backend">backend</a></h4>
+                <h4><a target="_blank" href="https://github.com/grykom/wolnowarze_api_docs">api-docs</a></h4>
             </div>
         </div>
     </header>
@@ -62,9 +62,9 @@ function App() {
             <h3>Response schema</h3>
                 <ApiItem name="likes" desc="int" />
         </Api>
-        <Api method="GET" desc="retrieve one random recipie" url="v1/no_idea_recipes" button="get data response">
+        <Api method="GET" desc="retrieve one random recipie data" url="v1/no_idea_recipes" button="get data response">
             <h3>Query parameters</h3>
-                <ApiItem name="?num={int}" desc="get num random recipies" />
+                <ApiItem name="?num={int}" desc="get num random recipies data" />
             <h3>Response schema</h3>
                 <ApiItem name="single recipie" desc="object" />
         </Api>
@@ -74,8 +74,10 @@ function App() {
                 <ApiItem name="paragraph" desc="string" />
                 <ApiItem name="icon" desc="string" />
         </Api>
-        <Api method="GET" desc="retrieve nine random gallery data (or one if there is no none receipes)" url="v1/gallery" button="get data response">
-            <h3>Response schema</h3>
+        <Api method="GET" desc="retrieve one random receipe gallery data" url="v1/gallery" button="get data response">
+                <h3>Query parameters</h3>
+                <ApiItem name="?num={int}" desc="get num random receipes gallery data" />
+                <h3>Response schema</h3>
                 <ApiItem name="recipe_id" desc="int" />
                 <ApiItem name="name" desc="string" />
                 <ApiItem name="slug" desc="string" />
