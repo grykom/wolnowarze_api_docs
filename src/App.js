@@ -9,9 +9,9 @@ function App() {
         <div>
             <h2 className="github__header">github</h2>
             <div className="github__urls">
-                <h4><a target="_blank" href="https://github.com/grykom/wolnowarze_frontend">frontend</a></h4>
-                <h4><a target="_blank" href="https://github.com/grykom/wolnowarze_backend">backend</a></h4>
-                <h4><a target="_blank" href="https://github.com/grykom/wolnowarze_api_docs">api-docs</a></h4>
+                <h4><a target="_blank" rel="noreferrer" href="https://github.com/grykom/wolnowarze_frontend">frontend</a></h4>
+                <h4><a target="_blank" rel="noreferrer" href="https://github.com/grykom/wolnowarze_backend">backend</a></h4>
+                <h4><a target="_blank" rel="noreferrer" href="https://github.com/grykom/wolnowarze_api_docs">api-docs</a></h4>
             </div>
         </div>
     </header>
