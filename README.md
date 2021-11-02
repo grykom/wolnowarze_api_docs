@@ -5,7 +5,7 @@
 Simple React app with API documentation for Wolnowarze project.
 
 
-### Configuration - components/Api.js file
+### Configuration - change yours API url on components/Api.js file
 ```
 const API_URL = "http://localhost:8000/"
 ```

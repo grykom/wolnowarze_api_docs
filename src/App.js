@@ -54,11 +54,11 @@ function App() {
                 <ApiItem name="views" desc="int" />
                 <ApiItem name="likes" desc="int" />
         </Api>
-        <Api method="POST" desc="recipie likes up" url="v1/recipes/<recipe_id>/likes_up" real_url="v1/recipes/1/likes_up" button="get response (recipe_id: 1)">
+        <Api method="POST" desc="give recipie 'like up'" url="v1/recipes/<recipe_id>/likes_up" real_url="v1/recipes/1/likes_up" button="get response (recipe_id: 1)">
             <h3>Response schema</h3>
                 <ApiItem name="likes" desc="int" />
         </Api>
-        <Api method="POST" desc="recipie likes down" url="v1/recipes/<recipe_id>/likes_down" real_url="v1/recipes/1/likes_down" button="get response (recipe_id: 1)">
+        <Api method="POST" desc="give recipie 'like down'" url="v1/recipes/<recipe_id>/likes_down" real_url="v1/recipes/1/likes_down" button="get response (recipe_id: 1)">
             <h3>Response schema</h3>
                 <ApiItem name="likes" desc="int" />
         </Api>
@@ -68,16 +68,16 @@ function App() {
             <h3>Response schema</h3>
                 <ApiItem name="single recipie" desc="object" />
         </Api>
-        <Api method="GET" desc="retrieve why slowcooker data" url="v1/why_slowcooker" button="get data response">
+        <Api method="GET" desc="retrieve 'why slowcooker' data" url="v1/why_slowcooker" button="get data response">
             <h3>Response schema</h3>
                 <ApiItem name="heading" desc="string" />
                 <ApiItem name="paragraph" desc="string" />
                 <ApiItem name="icon" desc="string" />
         </Api>
-        <Api method="GET" desc="retrieve one random receipe gallery data" url="v1/gallery" button="get data response">
-                <h3>Query parameters</h3>
+        <Api method="GET" desc="retrieve one random recipie gallery data" url="v1/gallery" button="get data response">
+            <h3>Query parameters</h3>
                 <ApiItem name="?num={int}" desc="get num random receipes gallery data" />
-                <h3>Response schema</h3>
+            <h3>Response schema</h3>
                 <ApiItem name="recipe_id" desc="int" />
                 <ApiItem name="name" desc="string" />
                 <ApiItem name="slug" desc="string" />
